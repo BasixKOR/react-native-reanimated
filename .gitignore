@@ -54,9 +54,21 @@ apple/Pods/
 lib/
 react-native-reanimated-tests.js
 
-# eclipse
-*.settings**
+# Eclipse
+.settings/
 
-# plugin
-plugin/build/plugin.js.map
-plugin/types
+# yarn
+**/.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# pre-commit
+.husky/log.txt
+
+# clangd
+.cache
+CompilationDatabase
+compile_commands.json
